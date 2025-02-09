@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша Продукция - Vostok Alex Agro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight,
+        header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: url('https://cdn.culture.ru/images/b2864dcc-e140-564f-ac66-e30c2586239e') no-repeat 0 -200px;
+            text-align: center;
+            color: #0f0b0b;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        #about {
+            padding: 20px;
+        }
+
+        #reviews {
+            padding: 20px;
+        }
+
+        .review {
+            background-color: #e9e3e3;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(238, 233, 233, 0.919);
+        }
+
+        #cultures {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #cultures ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cultures li {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 18px;
+            color: #35424a;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #0e0d0d;
+            background-color: #3a2ed5;
+            text-align: center;
+        }
+
+        @media(max-width: 768px) {
+
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+            }
+
+            header h1 {
+                margin-top: 10px;
+            }
+
+            #showcase h1 {
+                font-size: 35px;
+            }
+
+            #showcase p {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #35424a;
+            margin-bottom: 20px;
+        }
+
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #e8491d;
+        }
+
+        .product-content p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .product-content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #35424a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-content a:hover {
+            background-color: #e8491d;
+        }
+
+
+        @media (max-width: 768px) {
+            .product {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            #products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Vostok Alex</span> Agro - Наша Продукция</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="products.html" class="current">Наша Продукция</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="products-header">
+        <div class="container">
+            <h1>Наша Продукция</h1>
+            <p>Vostok Alex Agro предлагает широкий ассортимент высококачественных сельскохозяйственных культур,
+                выращенных с применением инновационных технологий. Мы гордимся качеством нашей продукции и стремимся
+                обеспечить наших клиентов только лучшим.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+
+            <div class="product">
+                <div class="product-content">
+                    <h3>Пшеница</h3>
+                    <img class="culture-image"
+                        src="https://avatars.mds.yandex.net/i?id=d1c4c424678011928692288094da72e0_l-5338379-images-thumbs&n=33&w=1872&h=1170"
+                        width="200" height="100">
+                    <p>Высококачественная пшеница, выращенная с использованием передовых технологий. Отлично подходит
+                        для производства хлеба и других продуктов питания.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-content">
+                    <h3>Ячмень</h3>
+                    <img class="culture-image"
+                        src="https://avatars.mds.yandex.net/i?id=c2fca3ecaddb672b0afdd96444137225_l-5325528-images-thumbs&n=13"
+                        width="200" height="100">
+                    <p>Ячмень высокого качества, идеально подходит для пивоварения и производства кормов для животных.
+                    </p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-content">
+                    <h3>Кукуруза</h3>
+                    <img class="culture-image"
+                        src="https://avatars.mds.yandex.net/i?id=b6d9d77efb0a750aca7b1a78ac474898_l-3680494-images-thumbs&n=13"
+                        width="200" height="100">
+                    <p>Кукуруза, выращенная с использованием современных методов, обеспечивает высокую урожайность и
+                        качество. Используется в пищевой промышленности и производстве кормов.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-content">
+                    <h3>Подсолнечник</h3>
+                    <img class="culture-image"
+                        src="https://avatars.mds.yandex.net/i?id=8eadc84b939c8e641b1ed475e1369f52_l-9041991-images-thumbs&n=13"
+                        width="200" height="100">
+
+                    <p>Подсолнечник, выращенный с заботой и вниманием к деталям, гарантирует высокое содержание масла и
+                        отличное качество семян.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Vostok Alex Agro, Copyright &copy; 2025</p>
+    </footer>
+
+</body>
+
+</html>

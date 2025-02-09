@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Vostok Alex Agro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight,
+        header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #906ee4;
+            font-weight: bold;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: url('https://cdn.culture.ru/images/b2864dcc-e140-564f-ac66-e30c2586239https://avatars.mds.yandex.net/i?id=6a47613095ada00a7b9b846e468fb337_l-5248827-images-thumbs&n=13') no-repeat 0 -200px;
+            text-align: center;
+            color: #fff;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        #about {
+            padding: 20px;
+        }
+
+        #reviews {
+            padding: 20px;
+        }
+
+        .review {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #cultures {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #cultures ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cultures li {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 18px;
+            color: #35424a;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #3a2ed5;
+            text-align: center;
+        }
+
+        @media(max-width: 768px) {
+
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+            }
+
+            header h1 {
+                margin-top: 10px;
+            }
+
+            #showcase h1 {
+                font-size: 35px;
+            }
+
+            #showcase p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Vostok Alex Agro</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href=about.html"active">О нас</a></li>
+                    <li><a href="products.html">Продукция</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Мы выращиваем будущее</h2>
+            <p>Современные технологии и забота о природе — основа нашего успеха.</p>
+            <a href="#about" class="btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Агрофирма <strong>Vostok Alex Agro</strong> — это команда профессионалов, которая с 2005 года
+                        занимается выращиванием высококачественной сельскохозяйственной продукции. Мы используем
+                        передовые технологии и экологически чистые методы, чтобы обеспечить наших клиентов лучшими
+                        продуктами.</p>
+                    <p>Наши поля расположены в экологически чистых регионах, а вся продукция проходит строгий контроль
+                        качества.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://avatars.mds.yandex.net/i?id=6a47613095ada00a7b9b846e468fb337_l-5248827-images-thumbs&n=13"
+                        alt="Поля">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container">
+            <h2>Наша миссия</h2>
+            <div class="mission-cards">
+                <div class="card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Экологичность</h3>
+                    <p>Мы заботимся о природе и используем только экологически чистые технологии.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tractor"></i>
+                    <h3>Инновации</h3>
+                    <p>Внедряем современные технологии для повышения урожайности и качества.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Качество</h3>
+                    <p>Наша продукция проходит строгий контроль на всех этапах производства.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements-section">
+        <div class="container">
+            <h2>Наши достижения</h2>
+            <div class="achievements-grid">
+                <div class="achievement">
+                    <h3>15+ лет</h3>
+                    <p>Успешной работы в сельском хозяйстве.</p>
+                </div>
+                <div class="achievement">
+                    <h3>1000+ клиентов</h3>
+                    <p>Довольных нашей продукцией.</p>
+                </div>
+                <div class="achievement">
+                    <h3>20+ регионов</h3>
+                    <p>Где представлена наша продукция.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vostok Alex Agro. Все права защищены.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
